@@ -28,12 +28,13 @@ export function useUpdater() {
         const result = await check();
         if (result) {
           console.log(`Update available: version ${result.version}`);
+          console.log(`Release notes: ${result}`);
           setUpdate(result);
         } else {
           console.log("You are running the latest version.");
         }
       } catch (e: any) {
-        console.error("Update check failed:", e);
+        console.error(e);
         setError(e.toString());
       }
     };

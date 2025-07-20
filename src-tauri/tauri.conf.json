@@ -1,7 +1,7 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
   "productName": "Vital Proxy Tester",
-  "version": "1.0.3",
+  "version": "1.0.2",
   "identifier": "com.vital-proxier.tester",
   "build": {
     "frontendDist": "../out",
@@ -22,11 +22,11 @@
         "center": true
       }
     ],
-
     "security": {
       "csp": null
     }
   },
+  "mainBinaryName": "Vital.Proxy.Tester",
   "bundle": {
     "createUpdaterArtifacts": true,
     "active": true,
@@ -41,14 +41,19 @@
   },
   "plugins": {
     "updater": {
-      "createUpdaterArtifacts": true,
       "active": true,
+      "createUpdaterArtifacts": true,
       "dialog": false,
-
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDUzQTlDRkJGN0NGMTY5QjQKUldTMGFmRjh2OCtwVTZ6ZDB5WjV4cHAxeEN0TlhGQXBEa2ZkL01aMUtrR2dNSWNxKy9ONmR5ZlcK",
       "endpoints": [
         "https://github.com/expensiveee/proxy-tester/releases/latest/download/latest.json"
-      ]
+      ],
+      "platforms": {
+        "darwin-aarch64": {
+          "signature": "",
+          "url": ""
+        }
+      }
     }
   }
 }
