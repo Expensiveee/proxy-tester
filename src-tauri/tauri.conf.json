@@ -41,11 +41,13 @@
   },
   "plugins": {
     "updater": {
+      "createUpdaterArtifacts": true,
       "active": true,
       "dialog": false,
+
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDUzQTlDRkJGN0NGMTY5QjQKUldTMGFmRjh2OCtwVTZ6ZDB5WjV4cHAxeEN0TlhGQXBEa2ZkL01aMUtrR2dNSWNxKy9ONmR5ZlcK",
       "endpoints": [
-        "https://github.com/expensiveee/proxy-tester/releases/latest"
+        "https://github.com/expensiveee/proxy-tester/releases/latest/download/latest.json"
       ]
     }
   }
