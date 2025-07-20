@@ -11,7 +11,9 @@ export default function Home() {
         <div className="w-full rounded-md border bg-white/5 backdrop-blur-3xl px-8 py-6">
           <div className="flex w-full items-center gap-2">
             <BarChart2 className="text-accent" size={32} />
-            <h3 className="text-4xl font-medium text-text-primary">Results</h3>
+            <h3 className="text-4xl font-medium text-text-primary">
+              Results (v1.0.2)
+            </h3>
           </div>
 
           <ProxyToolbar />
