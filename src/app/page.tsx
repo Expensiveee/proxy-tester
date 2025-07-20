@@ -12,7 +12,7 @@ export default function Home() {
           <div className="flex w-full items-center gap-2">
             <BarChart2 className="text-accent" size={32} />
             <h3 className="text-4xl font-medium text-text-primary">
-              Results (v1.0.2)
+              Results (v1.0.3)
             </h3>
           </div>
 
