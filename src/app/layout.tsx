@@ -5,6 +5,7 @@ import Image from "next/image";
 import Header from "@/components/header";
 import Link from "next/link";
 import HeaderSocials from "@/components/header-socials";
+import UpdateDialog from "@/components/update-dialog";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,7 +40,10 @@ export default function RootLayout({
             <div className="flex items-center justify-center my-6">
               <HeaderSocials />
             </div>
-            <div>{children}</div>
+            <div>
+              <UpdateDialog />
+              {children}
+            </div>
           </div>
         </div>
       </body>

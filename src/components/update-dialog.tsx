@@ -44,12 +44,10 @@ export default function UpdateDialog() {
           </div>
         )}
 
-        {error && (
-          <p className="text-center text-xs text-destructive">{error}</p>
-        )}
+        <p className="text-center text-xs text-destructive">{error}</p>
 
         <AlertDialogFooter>
-          <Button variant="outline" disabled={isInstalling}>
+          <Button variant="transparent" disabled={isInstalling}>
             Later
           </Button>
           <Button onClick={startInstall} disabled={isInstalling}>
